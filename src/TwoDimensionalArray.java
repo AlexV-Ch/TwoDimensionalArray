@@ -12,9 +12,6 @@ public class TwoDimensionalArray {
             for (int j = 0; j < twoArray[i].length; j++) {
                 twoArray[i][j] = (i == j) ? 'X' : ' ';
             }
-        }
-
-        for (int i = 0; i < twoArray.length; i++) {
             twoArray[i][(twoArray.length - 1) - i] = 'X';
         }
 
