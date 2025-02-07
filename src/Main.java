@@ -8,7 +8,8 @@ public class Main {
             System.out.println("Введите число: ");
             String text = new Scanner(System.in).nextLine();
             int drawing = Integer.parseInt (text.trim ());
-            TwoDimensionalArray.getTwoDimensionalArray(drawing);
+            TwoDimensionalArray.getPrintArray(TwoDimensionalArray.getTwoDimensionalArray(drawing));
+
 
         }
     }

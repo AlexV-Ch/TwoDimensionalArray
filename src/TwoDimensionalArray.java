@@ -18,13 +18,16 @@ public class TwoDimensionalArray {
             twoArray[i][(twoArray.length - 1) - i] = 'X';
         }
 
+        return twoArray;
+    }
+
+    public static void getPrintArray(char[][] twoArray) {
         for (int i = 0; i < twoArray.length; i++) {
             for (int j = 0; j < twoArray[i].length; j++) {
                 System.out.print(twoArray[i][j]);
                 System.out.print(j < (twoArray[i].length - 1)  ? "" :"\n" );
             }
         }
-
-        return twoArray;
     }
+
 }
